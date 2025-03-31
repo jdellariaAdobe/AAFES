@@ -1,0 +1,28 @@
+.tiles > ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+
+  li {
+    width: calc(33% - 10px);
+  }
+
+}
+
+
+.section[data-column='aside'] {
+  .tiles > ul {
+    flex-flow: column wrap;
+    gap: 0;
+    justify-content: flex-start;
+
+    li {
+      width: auto;
+    }
+  }
+}
+

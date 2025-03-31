@@ -255,3 +255,24 @@ main .section.highlight {
   margin: 0;
   padding: 40px 0;
 }
+
+body.two-col {
+  main {
+    display: grid;
+    grid-template-columns: 70% 30%;
+    gap: 30px;
+    max-width: 1200px;
+    margin: auto;
+
+    .section[data-column='aside'] {
+      img {
+        width: 100%;
+        height: auto;
+        object-fit: unset;
+        aspect-ratio: unset;
+
+      }
+    }
+
+  }
+}
