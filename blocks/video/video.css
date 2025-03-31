@@ -3,6 +3,13 @@
     max-width: 900px;
     margin: 24px auto;
   }
+
+  .video h1 {
+    background-color: var(--blue);
+    margin: 0;
+    padding: 10px 0;
+    color: white;
+  }
   
   .video[data-embed-loaded='false']:not(.placeholder) {
     /* reserve an approximate space to avoid extensive layout shifts */
