@@ -46,6 +46,13 @@ body.scrolled {
   --nav-height: 154px;
 }
 
+@media screen and (width <= 900px) {
+  :root {
+    --nav-height: 170px;
+  }
+  
+}
+
 /* fallback fonts */
 @font-face {
   font-family: roboto-condensed-fallback;
@@ -270,6 +277,11 @@ body.two-col {
     max-width: 1200px;
     margin: auto;
 
+    .section[data-column='main'] {
+      border-right: 1px solid var(--light-color);
+
+    }
+
     .section[data-column='aside'] {
       img {
         width: 100%;
@@ -277,8 +289,18 @@ body.two-col {
         object-fit: unset;
         aspect-ratio: unset;
 
+
       }
     }
 
+  }
+}
+
+@media (width <= 900px) {
+  body.two-col { 
+    main {
+      display: flex;
+      flex-direction: column;
+    }
   }
 }

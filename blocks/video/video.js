@@ -107,8 +107,8 @@ const loadVideoEmbed = (block, link, autoplay, background) => {
 };
 
 export default async function decorate(block) {
-    const title = block.querySelector('h1');
-    const placeholder = block.querySelector('picture');
+  const title = block.querySelector('h1');
+  const placeholder = block.querySelector('picture');
   const link = block.querySelector('a').href;
   block.textContent = '';
   block.dataset.embedLoaded = false;

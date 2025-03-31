@@ -52,10 +52,12 @@ header nav a:any-link {
 
 /* hamburger */
 header nav .nav-hamburger {
-  grid-area: hamburger;
   height: 22px;
   display: flex;
   align-items: center;
+  position: absolute;
+  right: 50px;
+  top: 20px
 }
 
 header nav .nav-hamburger button {
@@ -65,7 +67,7 @@ header nav .nav-hamburger button {
   border-radius: 0;
   padding: 0;
   background-color: var(--background-color);
-  color: inherit;
+  color: var(--blue);
   overflow: initial;
   text-overflow: initial;
   white-space: initial;
