@@ -1,6 +1,11 @@
 footer {
-  background-color: var(--light-color);
+  background-color: var(--blue);
   font-size: var(--body-font-size-xs);
+  color: white;
+
+  a:any-link {
+    color: white;
+  }
 }
 
 footer .footer > div {
