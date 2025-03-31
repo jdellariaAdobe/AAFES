@@ -123,9 +123,13 @@ h6 {
   font-weight: 600;
   line-height: 1.25;
   scroll-margin: 40px;
+  color: var(--blue);
 }
 
-h1 { font-size: var(--heading-font-size-xxl); }
+h1 { 
+  font-size: var(--heading-font-size-xxl); 
+  text-transform: uppercase;
+}
 h2 { font-size: var(--heading-font-size-xl); }
 h3 { font-size: var(--heading-font-size-l); }
 h4 { font-size: var(--heading-font-size-m); }
@@ -183,10 +187,10 @@ a.button:any-link,
 button {
   box-sizing: border-box;
   display: inline-block;
-  max-width: 100%;
+  width: 100%;
   margin: 12px 0;
   border: 2px solid transparent;
-  border-radius: 2.4em;
+  border-radius: .4em;
   padding: 0.5em 1.2em;
   font-family: var(--body-font-family);
   font-style: normal;
@@ -194,7 +198,7 @@ button {
   line-height: 1.25;
   text-align: center;
   text-decoration: none;
-  background-color: var(--link-color);
+  background-color: var(--red);
   color: var(--background-color);
   cursor: pointer;
   overflow: hidden;
@@ -206,7 +210,7 @@ a.button:hover,
 a.button:focus,
 button:hover,
 button:focus {
-  background-color: var(--link-hover-color);
+  background-color: var(--link-color);
   cursor: pointer;
 }
 
@@ -276,6 +280,10 @@ body.two-col {
     gap: 30px;
     max-width: 1200px;
     margin: auto;
+
+    &:has(.section[data-column='aside-slim']) {
+      grid-template-columns: 80% 10%;
+    }
 
     .section[data-column='main'] {
       border-right: 1px solid var(--light-color);
