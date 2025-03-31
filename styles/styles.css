@@ -291,14 +291,41 @@ body.two-col {
     }
 
     .section[data-column='aside'] {
+      text-align: center;
+      
       img {
         width: 100%;
         height: auto;
-        object-fit: unset;
+        object-fit: cover;
         aspect-ratio: unset;
-
-
       }
+
+      .carousel {
+        nav {
+          display: none;
+        }
+
+        .carousel-navigation-buttons {
+          left: 5px;
+          right: 5px;
+
+          button {
+            background-color: transparent;
+            color: black;
+          }
+        }
+
+        ul.carousel-slides {
+          min-height: 180px;
+
+          img {
+            max-height: 180px;
+            width: auto;
+          }
+        }
+      }
+
+      
     }
 
   }

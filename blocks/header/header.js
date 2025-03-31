@@ -140,6 +140,13 @@ export default async function decorate(block) {
   if (brandLink) {
     brandLink.className = '';
     brandLink.closest('.button-container').className = '';
+  } else {
+    const link = document.createElement('a');
+    link.href = '/';
+    const navImg = navBrand.querySelector('picture');
+    link.append(navImg);
+    navBrand.textContent = '';
+    navBrand.append(link);
   }
 
   const navSections = nav.querySelector('.nav-sections');
