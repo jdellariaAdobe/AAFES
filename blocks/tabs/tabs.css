@@ -21,7 +21,7 @@
 .tabs .tabs-list button {
   flex: 0 0 max-content;
   margin: 0;
-  border: 1px solid #dadada;
+  border: 1px solid ##f3f6f4;
   border-radius: 0;
   padding: 0.5em;
   background-color: var(--light-color);
